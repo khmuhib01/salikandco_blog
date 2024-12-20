@@ -1,5 +1,5 @@
 @extends('layouts.admin.layer')
-@section('title', 'Change Passwrod | ChefOnline Blog')
+@section('title', 'Change Passwrod | Salik & Co Blog')
 @section('content')
 <style type="text/css">
     .back-our-work-page {

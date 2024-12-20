@@ -47,7 +47,7 @@
                 <a href="{{ url('/') }}" class="brand">
                     <small>
                         <i class="icon-leaf"></i>
-                        ChefOnline Blog Admin
+                        Salik & Co Blog Admin
                     </small>
                 </a>
                 <!--/.brand-->

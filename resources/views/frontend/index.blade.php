@@ -6,8 +6,8 @@ if (Request::segment(1)) :
 endif;
 @endphp
 @section('slug', $slug)
-@section('header_title', 'ChefOnline Partners Information Hub | Catering Industry Updates')
-@section('header_description', 'The latest and most important news and updates of the UK catering industry and current affairs, all in one convenient location for all restaurant businesses.')
+@section('header_title', 'Salik & Co | Estate Agent | Sales Lettings & Management | East London')
+@section('header_description', 'Independent estate agent from East London covering Brick Lane, Shoreditch, Bethnal Green Whitechapel specializing in property sales, lettings management.')
 @section('content')
     <div class="main-content content-cat-8 col-sx-12 col-sm-12 col-md-8 col-lg-8">
         <div class="archive-blog  row ct-list">

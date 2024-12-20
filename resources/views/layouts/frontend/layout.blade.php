@@ -3,160 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="http://www.chefonline.co.uk/blog/xmlrpc.php">
+
 
     <title>@yield('header_title')</title>
     <meta name="description" content="@yield('header_description')" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <link rel="canonical" href="{{url()->current()}}" />
-    <link rel="next" href="{{ url('?page=2') }}" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="@yield('header_title')" />
-    <meta property="og:description" content="@yield('header_description')" />
-    <meta property="og:url" content="{{ Request::url() }}" />    
-	<meta property="og:image" content="@yield('header_ogimage')" />
-    <meta property="og:image:width" content="300" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:site_name" content="@yield('header_title')" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@chefonlineuk" />
 	
 	<link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}">
-    <script type="application/ld+json" class="yoast-schema-graph">
-        {
-            "@context": "https://schema.org",
-            "@graph": [{
-                "@type": "Organization",
-                "@id": "@yield('slug')/#organization",
-                "name": "ChefOnline",
-                "url": "@yield('slug')",
-                "sameAs": ["https://www.facebook.com/ChefOnlineUK", "https://www.instagram.com/chefonlineuk/",
-                    "https://www.linkedin.com/company/chef-online",
-                    "https://www.youtube.com/channel/UCiuWjkTLdvJQ6EJECQa-7Zw",
-                    "https://www.pinterest.com/chefonlineuk/", "https://twitter.com/chefonlineuk"
-                ],
-                "logo": {
-                    "@type": "ImageObject",
-                    "@id": "@yield('slug')/#logo",
-                    "inLanguage": "en-GB",
-                    "url": "https://www.chefonline.co.uk/blog/assets/images/frontend/logo.png",
-                    "contentUrl": "https://www.chefonline.co.uk/blog/assets/images/frontend/logo.png",
-                    "width": 240,
-                    "height": 38,
-                    "caption": "ChefOnline"
-                },
-                "image": {
-                    "@id": "https://www.chefonline.co.uk/blog/#logo"
-                }
-            }, {
-                "@type": "WebSite",
-                "@id": "@yield('slug')/#website",
-                "url": "@yield('slug')/",
-                "name": "@yield('header_title')",
-                "description": "@yield('header_description')",
-                "publisher": {
-                    "@id": "@yield('slug')/#organization"
-                },
-                "potentialAction": [{
-                    "@type": "SearchAction",
-                    "target": "https://www.chefonline.co.uk/blog/?s={search_term_string}",
-                    "query-input": "required name=search_term_string"
-                }],
-                "inLanguage": "en-GB"
-            }, {
-                "@type": "CollectionPage",
-                "@id": "@yield('slug')/#webpage",
-                "url": "@yield('slug')/",
-                "name": "@yield('header_title')",
-                "isPartOf": {
-                    "@id": "@yield('slug')/#website"
-                },
-                "about": {
-                    "@id": "@yield('slug')/#organization"
-                },
-                "description": "@yield('header_description')",
-                "breadcrumb": {
-                    "@id": "@yield('slug')/#breadcrumb"
-                },
-                "inLanguage": "en-GB",
-                "potentialAction": [{
-                    "@type": "ReadAction",
-                    "target": ["@yield('slug')/"]
-                }]
-            }, {
-                "@type": "BreadcrumbList",
-                "@id": "@yield('slug')/#breadcrumb",
-                "itemListElement": [{
-                    "@type": "ListItem",
-                    "position": 1,
-                    "item": {
-                        "@id": "@yield('slug')/#webpage"
-                    }
-                }]
-            }]
-        }
-    </script>
-    <meta name="msvalidate.01" content="7013a0fd3097403283e010038cc858e0" />
-    <meta name="google-site-verification" content="Vx4tJTLUjwfKzQoSgTcULeAJdvgW_0wd0f0PtX2X9BA" />
-    <!-- / Yoast SEO plugin. -->
 
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-N659T7S');
-    </script>
-    <!-- End Google Tag Manager -->
 
     <link rel="stylesheet" href="{{ asset('assets/css/all.css') }}" media="all" />    
     <script async src="{{ asset('assets/js/all.js') }}"></script>
-
-    <meta property="fb:app_id" content="" />
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70845701-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-70845701-1');
-    </script>
-    <meta name="google-site-verification" content="Vx4tJTLUjwfKzQoSgTcULeAJdvgW_0wd0f0PtX2X9BA" />
-    <meta name="msvalidate.01" content="17E33B33B7B85804E29C01DD8CBBA654" />
-    <meta name="ahrefs-site-verification" content="02c77069d1e483f6ac5fa0fdb63e6286e8596c254defeeece9233c81dc9961ee">
 </head>
 
 <body class="home blog">
-    <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N659T7S" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript> -->
-    <!-- End Google Tag Manager (noscript) -->
+
     <div class="hidden" itemscope itemtype="http://schema.org/Organization">
-        <span itemprop="name">ChefOnline Blog</span>
-        <span itemprop="company">ChefOnline</span>
-        <span itemprop="tel">0330 380 1000</span>
+        <span itemprop="name">Salik & Co Blog</span>
+        <span itemprop="company">Salik & Co</span>
+        <span itemprop="tel">+44 (0) 207 729 5447</span>
     </div>
     <div id="page" class="wrapper site">
         <div class="canvas-overlay"></div>
@@ -165,16 +31,16 @@
             <div id="goody-header">
                 <div class="header-content-logo container">
                     <div class="site-logo" id="logo">
-                        <a href="https://www.chefonline.co.uk" rel="home">
+                        <a href="https://www.salikandco.com/blog/" rel="home">
                             <img src="{{ asset('assets/images/frontend/logo.png') }}"
-                                alt="ChefOnline Blog | Reviews, Recipes, And Everything Foody" />
+                                alt="Salik &amp; Co Blog | Reviews, Recipes, And Everything Foody" />
                         </a>
                     </div>
 
                     <div class="header-middle">
                         <div id="information_widget-6" class="widget first information_widget">
                             <div class="goody-image-content">
-                                <a class="clearfix" href="https://www.chefonline.co.uk/" target="_blank">
+                                <a class="clearfix" href="https://www.salikandco.com/blog/" target="_blank">
                                     <img class="goody-image"
                                         src="{{ asset('assets/images/frontend/Web-blog-final-1.jpg') }}" alt="img" />
                                 </a>
@@ -192,7 +58,7 @@
                                 <ul id="menu-primary-navigation" class="nav navbar-nav na-menu mega-menu">
                                     <li id="menu-item-2485"
                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2485">
-                                        <a href="https://www.chefonline.co.uk">Home</a>
+                                        <a href="https://www.salikandco.com/blog/">Home</a>
                                     </li>
                                     @if (!empty(getCategories()))
                                         @foreach (getCategories() as $category)
@@ -206,7 +72,7 @@
                             </nav>
                         </div>
                         <!--Seacrch & Cart-->
-                        <div class="header-content-right">
+                        {{-- <div class="header-content-right">
 
                             <div class="header-social">
                                 <div id="goody_social-4" class="widget first goody_social">
@@ -228,7 +94,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -256,29 +122,28 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="our-address">
-                                <h5>BEST TAKEAWAYS</h5>
+                                <h5>ABOUT SALIK & CO</h5>
                                 <div class="quick-list">
                                     <ul>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/indian-takeaways">Indian</a>
+                                            <a href="https://www.salikandco.com/about">About</a>
+                                        </li>                            <li>
+                                            <a href="https://www.salikandco.com/selling">Selling</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/bangladeshi-takeaways">Bangladeshi</a>
+                                            <a href="https://www.salikandco.com/buying">Buying</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/fast-food-takeaways">Fast Food</a>
+                                            <a href="https://www.salikandco.com/property-management">Property Management</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/thai-takeaways">Thai</a>
+                                            <a href="https://www.salikandco.com/landlords">Landlords</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/pizza-takeaways">Pizza</a>
+                                            <a href="https://www.salikandco.com/tenants">Tenants</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/italian-takeaways">Italian</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.chefonline.co.uk/cuisines">View all cuisines</a>
+                                            <a href="https://www.salikandco.com/inventory">Inventory</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -290,26 +155,22 @@
                                 <div class="quick-list">
                                     <ul>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/east-london-takeaways">London</a>
+                                            <a href="https://www.salikandco.com/sales">Sales</a>
                                         </li>
                                         <li>
                                             <a
-                                                href="https://www.chefonline.co.uk/newcastle-upon-tyne-takeaways">Newcastle</a>
+                                                href="https://www.salikandco.com/lettings">Letting</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/rochester-takeaways">Rochester</a>
+                                            <a
+                                                href="https://www.salikandco.com/valuation">Valuation</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/watford-takeaways">Watford</a>
+                                            <a href="https://www.salikandco.com/howtorent">How to Rent</a>
                                         </li>
+                                        
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/liverpool-takeaways">Liverpool</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.chefonline.co.uk/oxford-takeaways">Oxford</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.chefonline.co.uk/areas">View all locations</a>
+                                            <b><a href="https://www.salikandco.com/fees-and-charges">Fees and Charges</a></b>
                                         </li>
                                     </ul>
                                 </div>
@@ -318,36 +179,26 @@
 
                         <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="our-address">
-                                <h5>COMPANY</h5>
+                                <h5>COMPANY</h5>                          
                                 <div class="quick-list">
                                     <ul>
                                         <li>
-                                            <a href="https://www.chefonline.com/business-registration">Restaurant sign
-                                                up</a>
+                                            <a href="https://www.salikandco.com/privacy">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/cookies-policy">How do we use cookies?
-                                            </a>
+                                            <a href="https://www.salikandco.com/terms">Terms & Conditions</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/mobile-apps">Mobile Apps
-                                            </a>
+                                            <a href="https://www.salikandco.com/cookies">Cookies Policy</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/contact-us">Contact us
-                                            </a>
+                                            <a href="https://www.salikandco.com/complaint-procedure">Complaints Procedure</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/privacy-policy">Privacy Policy
-                                            </a>
+                                            <a href="https://www.salikandco.com/client-money-protection">Client Money Protection</a>
                                         </li>
                                         <li>
-                                            <a href="https://www.chefonline.co.uk/terms-and-conditions">Terms &amp;
-                                                Conditions
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <b><a href="https://www.chefonline.co.uk/blog/">ChefOnline Blog</a></b>
+                                            <b><a href="https://www.salikandco.com/faq">Faq</a></b>
                                         </li>
                                     </ul>
                                 </div>
@@ -360,16 +211,16 @@
                                 <div class="quick-list">
                                     <ul class="social">
                                         <li>
-                                            <a href="https://www.facebook.com/ChefOnlineUK">
+                                            <a href="https://www.facebook.com/salikandcobricklane/">
                                                 <i class="fa fa-facebook"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://twitter.com/chefonlineuk">
+                                            <a href="https://www.x.com/salikandco">
                                                 <i class="fa fa-twitter"></i>
                                             </a>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <a href="https://www.instagram.com/chefonlineuk">
                                                 <i class="fa fa-instagram"></i>
                                             </a>
@@ -384,9 +235,9 @@
                                                 <i class="fa fa-youtube" aria-hidden="true"></i>
 
                                             </a>
-                                        </li>
+                                        </li> --}}
                                         <li>
-                                            <a href="https://www.linkedin.com/company/chef-online">
+                                            <a href="https://www.linkedin.com/company/salik-and-co">
                                                 <i class="fa fa-linkedin"></i>
                                             </a>
                                         </li>
@@ -403,7 +254,7 @@
         <div class="copyright text-center">
             <div class="container">
                 <div class="col-xs-12 col-sm-12 copyright-content">
-                    Copyright © {{ date('Y') }} <a href="https://www.chefonline.co.uk">ChefOnline</a>. All rights reserved.
+                    Copyright © {{ date('Y') }} <a href="https://www.salikandco.com">Salik & Co</a>. All rights reserved.
                 </div>
             </div>
         </div>

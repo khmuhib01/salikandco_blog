@@ -1,5 +1,5 @@
 @extends('layouts.admin.layer')
-@section('title', 'Category Add | ChefOnline Blog')
+@section('title', 'Category Add | Salik & Co Blog')
 @section('content')
 <script src="{{url('assets/admin/js/bootbox.js')}}"></script>
 <div class="breadcrumbs" id="breadcrumbs">

@@ -3,11 +3,11 @@
             <aside id="text-8" class="widget widget_text">
                 <h3 class="widgettitle">Welcome to</h3>
                 <div class="textwidget">
-                    <h1 class="widgettitle welcome">ChefOnline Food Blog</h1>
+                    <h1 class="widgettitle welcome" style="background: #2B69B2">Salik & Co Blog</h1>
                 </div>
             </aside>
-            <aside id="text-9" class="widget widget_text">
-                <h3 class="widgettitle">ChefOnline Service Rating</h3>
+            {{-- <aside id="text-9" class="widget widget_text">
+                <h3 class="widgettitle">Salik & Co Service Rating</h3>
                 <div class="textwidget">
                     <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32"
                         data-businessunit-id="5ba77b4d28ce1900011616cf" data-style-height="150px"
@@ -19,7 +19,7 @@
                         </script>
                     </p>
                 </div>
-            </aside>
+            </aside> --}}
             <aside id="categories-6" class="widget widget_categories">
                 <h3 class="widgettitle">Categories</h3>
                 <ul>
@@ -48,7 +48,7 @@
                                 @endphp
                                 <li><a href="{{ url($recentVal->slug) }}">
                                         <img width="120" height="100" src="{{ $image }}"
-                                            class="attachment-120x100 size-120x100 wp-post-image" alt="ChefOnline"
+                                            class="attachment-120x100 size-120x100 wp-post-image" alt="Salik & Co"
                                             loading="lazy" /><span class="rpwwt-post-title">{{ $recentVal->title }}</span>
                                     </a>
                                     <div class="rpwwt-post-date">{{ $post_date }}</div>
@@ -93,7 +93,7 @@
                         }(document, 'script', 'facebook-jssdk'));
                     </script>
                     <div class="fb-like-box" style="background-color: auto;" data-small-header="true"
-                        data-height="400" data-href="https://www.facebook.com/ChefOnlineUK" data-show-border="true"
+                        data-height="400" data-href="https://www.facebook.com/salikandcobricklane/" data-show-border="true"
                         data-show-faces="true" data-stream="true" data-width="300" data-force-wall="false"></div>
 
                 </div>

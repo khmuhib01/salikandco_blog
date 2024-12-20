@@ -1,5 +1,5 @@
 @extends('layouts.admin.layer')
-@section('title', 'Profile | ChefOnline Blog')
+@section('title', 'Profile | Salik & Co Blog')
 @section('content')
 <div class="breadcrumbs" id="breadcrumbs">
     <ul class="breadcrumb">

@@ -1,5 +1,5 @@
 @extends('layouts.admin.layer')
-@section('title', 'Add Content | ChefOnline Blog')
+@section('title', 'Add Content | Salik & Co Blog')
 @section('content')
 <script src="{{url('assets/admin/js/bootbox.js')}}"></script>
 <script src="{{ url('assets/admin/js/ckeditor/ckeditor.js') }}"></script>
